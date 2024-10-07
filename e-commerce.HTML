@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "project.css" type = "text/css">
+   
+    <title> All Shoes Nike </title>
+</head>
+
+<body>
+    <div class="nav">
+        
+        <button id ="darkmode">Darkmode</button>
+    </div>
+    
+    <h1> All Shoes Nike </h1>
+        <p>This is the home to All Shoes Nike</p>
+
+
+     <nav class ="navbar">
+         <ul>
+             <li><a href = "e-commerce.HTML">Home</a></li>
+             <li><a href="checkout.html"> Checkout</a></li>
+             <li><a href = "contact.HTML"> Contact </a></li>
+             <li><a href = "about.HTML"> About </a></li>
+             <li><a href = "review.HTML"> Review Us </a></li>
+         </ul>
+        </nav>
+        <main> Shop here for our best Nike shoes!</main>
+        <br>
+
+            <div class="shoeContainer">
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML"> <!-- the href will open up to the review page -->
+                        <img src ="images/img1.jpg" alt="Nike Dunk Lows">
+                    </a>
+                    <p class = "discription">Nike Dunk Lows <br> £100.00 </p> <!-- this description should appear underneath the shoe with the <br> allowing a small gap -->
+                    <button onclick="addToCart(1, 'Nike Dunk Lows', 100.00)"> Add to basket  </button>
+                </div>
+
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML">
+                        <img src ="images/img2.jpg" alt="Nike Air Max">
+                    </a>
+                    <p class = "discription">Nike Air Max <br> £109.99 </p>
+                    <button onclick="addToCart(2, 'Nike Air Max', 109.99)"> Add to basket  </button>
+                </div>
+            
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML">
+                        <img src ="images/img3.jpg" alt="Nike Air Force One">
+                    </a>
+                    <p class = "discription">Nike Air Force One <br> £70.00 </p>
+                    <button onclick="addToCart(3, 'Nike Air Force One', 70.00)"> Add to basket </button>
+                </div>
+
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML">
+                        <img src="images/img4.jpg" alt="Nike React Vision">
+                    </a>   
+                    <p class = "discription">Nike React Vision <br> £85.99 </p>
+                    <button onclick="addToCart(4, 'Nike React Vision', 85.99)">Add to basket </button>
+                 </div>
+
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML">
+                        <img src="images/img5.jpg" alt="Nike WearAllDay">
+                    </a>
+                    <p class = "discription">Nike Wear All Day <br> £200.00</p>
+                    <button onclick="addToCart(5, 'Nike Wear All Day', 200.00)"> Add to basket </button>
+                </div>
+
+                <div class = "shoes">
+                    <a target="_blank" href="review.HTML">
+                        <img src="images/img6.jpg" alt="Jordan One Take 5">
+                    </a>
+                    <p class = "discription">Jordan One Take 5 <br> £255.99 </p>
+                    <button onclick="addToCart(6, 'Jordan One Take 5', 255.99)"> Add to basket </button>
+                 </div>
+            </div>
+
+                <h2> My Basket </h2>
+                <ul id="basketItems"></ul>
+           
+                 <p id="totalPrice"> Total:</p>
+      
+             <div class = "checkout" >
+         
+             <button><a href= "checkout.html"> Checkout  </a></button>
+        
+         
+        </div>
+
+         <script src = "darkMode.js"></script> <!--Script must always be at bottom-->
+         <script src = "app.js"></script>
+         <script src = "database.js"></script>
+         <script src = "basket.js"></script>
+
+</body>
+</html>

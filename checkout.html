@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "project.css" type = "text/css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="nav">
+        
+        <button id ="darkmode">Darkmode</button>
+    </div>
+
+    <h1> Checkout </h1>
+
+    <nav class ="navbar"> <!-- Making seperate classes allow me to edit certain elements of the website without it affecting other things on the website-->
+        <ul>
+            <li><a href = "e-commerce.HTML">Home</a></li> <!--This should create a link between the the writing on the nav bar and the html files that i have created specifically for them-->
+            <li><a href="checkout.html"> Checkout</a></li>
+            <li><a href = "contact.HTML"> Contact </a></li>
+            <li><a href = "about.HTML"> About </a></li>
+            <li><a href = "review.HTML"> Review Us </a></li>
+        </ul>
+
+        </nav>
+
+   
+
+    <ul id="basketItems"></ul>
+           
+         <p id="totalPrice"> Total:</p>
+
+    <form id="form">
+        
+        <h3><label for="Name">Name:</label></h3>
+         <input type="text" id = "Name" name="Name" placeholder="" required>
+         <br><br>
+
+        <h3><label for="Account Name">Account Name:</label></h3>
+        <input type="text" id = "accountName" name="accountName" placeholder="" required>
+
+        <h3><label for="Account Number">Account Number:</label></h3>
+        <input type="text" id = "accountNumber" name="accountNumber" placeholder="" required>
+
+        <h3><label for="Account sortCode">Account Sort Code:</label></h3>
+        <input type="text" id = "account sortCode" name="account sortCode" placeholder="" required>
+
+        <h3><label for="Account CVV">Account CVV:</label></h3>
+        <input type="text" id = "account CVV" name="account CVV" placeholder="" required>
+        
+        <br><br>
+
+        <button type ="button" id="submitbtn">Submit</button justify-content = center>
+
+
+
+    </form>
+
+   
+
+
+     <script src = "darkMode.js"> </script>
+     <script src="review.js"></script>
+     <script src = "app.js"></script>
+     <script src = "database.js"></script>
+</body>
+</html>

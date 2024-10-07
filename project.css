@@ -1,0 +1,210 @@
+:root{
+    --primary-color:rgb(248, 243, 243);
+    --secondary-color:black;
+}
+body{
+    margin: 0px;
+    background-color:white; /* This is the default theme of the website that will come up when you open the document */
+    color:black;
+    font-size:15px;
+   
+}
+.darkmode{
+   
+    background-color:rgb(3, 3, 3);
+    color:rgb(252, 252, 252);
+}
+.container{
+    font-size:small;
+    display:flex;
+    justify-content:right;
+}
+.text{
+    font:Tahoma;
+}
+.nav{
+    font-size:2rem;
+    font:Tahoma;
+    text-align:right;
+}
+
+
+main{
+    font-family: Tahoma;
+    font-weight:bold;
+    text-align:center;
+}
+main ~ p{ /* whatever text in the p tag that is directly underdeath the main tag will align itself without the risk of it affecting the other p tages in the document */
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact; /* This will vbe the font of all h1 tags*/ 
+}
+h1 + p{
+    font-family:Impact; 
+    text-align:center;
+}
+h2{
+    font-family:Tahoma;
+    text-align:center
+}
+h2 ~ p{
+    font-family:Tahoma;
+    text-align:center
+}
+h3{
+    font-family:Tahoma;
+    text-align:center;
+}
+textarea{
+    font-family:Tahoma;
+    height:100px;
+    width:250px;
+
+}
+
+p{
+    font-family: Tahoma;
+    font-weight:bold;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%); /* This colour will be the underlayer of the writing, because it is grey, if the writing ontop is white or blue then the text will come out that colour with the nav bar still being grey */
+    padding: 0px; /* The padding and margin being 0 prevents there from being any gaps between the edge of the page and the nav bar */
+    margin: 0px;
+    overflow: hidden; /* This stops elements from coming out of the nav bar and showing on the screen*/
+}
+.navbar a{ /* Here will be where the writing is presented so the about, contact etc section will be displayed as these properties of white and so on */
+    font-family:Tahoma;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%); /* When the curson hovers over the different words in the nav bar, a slightly different colour which appear to signify that this word is being hovered over  */
+}
+.navbar li{
+    float: left;
+}
+.shoeContainer{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+.shoes{ /* the dot signifies different classes, so e.g .shoes and .logo are different classes in the html, this means i can edit these seperately to however i want in the css file */
+
+    display:inline-block;
+    border:4px solid rgb(121, 120, 120); /* This creates a border around the images */
+    margin:50px;
+    padding: 15px;
+    width:20%;
+    object-fit:contain;
+    font-family:Tahoma;
+
+}
+.shoes:hover{
+    border:5px solid rgb(255, 1, 1); /* Makes a border around the image for aesthetics */
+}
+.shoes img{
+    width:100%;
+    height:auto; /* the image height will automically apply to the size of the border to ensure the image does not pop out of it */
+}
+#basketItems li{
+    text-align:center;
+    font-family:Tahoma;
+}
+#totalPrice{
+    text-align:center;
+    font-family:Tahoma;
+}
+.checkout{
+   text-align:center;
+   
+}
+.celebs img{
+    display:inline-block;
+    margin:40px;
+    border:4px solid rgb(59, 58, 58);
+    
+}
+
+.video{
+    text-align:center;
+    border:4px rgb(121, 120, 120);
+    padding:15px;
+    margin:10px;
+  
+}
+footer{
+    text-align:center;
+    padding:20px;
+}
+.socialContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    text-align:center; 
+    @media (max-width:800px) {
+
+        flex-direction: column;
+        
+    }
+}
+.logoContainer{
+    display:inline-block;
+    border:4px solid rgb(121, 120, 120); /* This creates a border around the images */
+    padding:15px;
+    
+} 
+.social{
+    display:column;
+    padding: 15px;
+    margin:50px;
+}
+.logo{
+    margin:0 10px; /* 0 is top and bottom, 10 is left and right */
+    width:80px;
+    height:auto;
+}
+
+.logoContainer:hover{
+    
+    border:5px solid rgb(255, 0, 0);
+   
+}
+
+.review{
+
+    display:center;
+    border:4px solid rgb(121, 120, 120);
+    margin: auto;
+    padding: 15px;
+    width:300px;
+    font-family:Tahoma;
+}
+
+.button{
+    right:px;
+    display:center;
+}
+
+#form{
+    padding:15px;
+    margin:100px;
+    text-align:center;
+    font-family:Impact;
+}
+#comment{
+    vertical-align:top;
+    width:300px;
+    height:150px;
+}
+
+
+

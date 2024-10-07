@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "project.css" type = "text/css">
+    
+    <title> All Shoes Nike </title>
+</head>
+
+<body>
+   <div class="nav">
+         <button id ="darkmode">Darkmode</button>
+     </div>
+    
+    <h1> All Shoes Nike </h1>
+         <p>Review Us!</p>
+
+     <nav class ="navbar">
+         <ul>
+             <li><a href = "e-commerce.HTML">Home</a></li>
+             <li><a href="checkout.html"> Checkout</a></li>
+             <li><a href = "contact.HTML"> Contact </a></li>
+             <li><a href = "about.HTML"> About </a></li>
+             <li><a href = "review.HTML"> Review Us </a></li>
+         </ul>
+     </nav>
+        <main> Review us here! </main>
+     <form id="form">
+        
+           <h3><label for="Name">Name:</label></h3>
+            <input type="text" id = "Name" name="Name" placeholder="" required>
+            <br><br>
+            <h3><label>What Product</label></h3>
+            <select id = "Product"> <!--This will make a drop down of the options -->
+                    <option>Nike Dunk Lows</option>
+                    <option>Nike Air Max</option>
+                    <option>Nike Air Force One</option>
+                    <option>Nike React Vision</option>
+                    <option>Jordan One Take 5</option>
+            </select>
+           
+
+            <h3><label for="Ratings">Ratings:</label></h3> <!-- a dropdown of the numbers 1 to 5 will open up next to the ratings comment-->
+            <select id = "Ratings">
+                <option>1 Stars </option>
+                <option>2 Stars </option>
+                <option>3 Stars </option>
+                <option>4 Stars </option>
+                <option>5 Stars </option>
+            </select>
+            
+               
+            <h3><label for="Review">Review:</label></h3>
+            <textarea id = "Review" ></textarea> <!-- Text area just creates a box that people can write their revies in-->
+                <br><br>
+                <button type ="button" id="submitbtn">Submit</button justify-content = center>
+
+     </form>
+                <h2>Submitted reviews</h2>
+                 <div id = "output"></div>
+                
+
+
+        
+       
+       
+        <script src = "darkMode.js"> </script>
+        <script src="review.js"></script>
+        <script src = "app.js"></script>
+        <script src = "database.js"></script>
+       
+</body>
+</html>
